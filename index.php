@@ -28,6 +28,10 @@ $f3 -> route('GET /', function($f3){
     $f3->set('desserts', array('chocolate' => "Chocolate Mousse",
         'vanilla'=> 'Vanilla Custard',
         'strawberry' => 'Strawberry Shortcake'));
+
+
+    $f3 ->set('preferredCustomer', true);
+    $f3->set('lastLogin', strtotime('-1 week'));
     $view = new Template();
     echo $view->render('views/home.html');
 
