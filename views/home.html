@@ -22,6 +22,14 @@
                 <li><a href="{{ @bookmark}}"> {{ @bookmark}}</a></li>
             </repeat>
         </ul>
+        <h2>Dessert Options</h2>
+        <repeat group="{{ @desserts }}"
+                key="{{ @key }}"
+                value="{{ @value }}">
+            <input type="checkbox" name="{{ @key }}" value="{{ @value }}">{{ @value }}<br>
+
+        </repeat>
+
     </div>
 </div>
 

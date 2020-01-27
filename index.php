@@ -24,6 +24,10 @@ $f3 -> route('GET /', function($f3){
         'http://www.whowherehow.org',
         'http://gmail.com')
     );
+
+    $f3->set('desserts', array('chocolate' => "Chocolate Mousse",
+        'vanilla'=> 'Vanilla Custard',
+        'strawberry' => 'Strawberry Shortcake'));
     $view = new Template();
     echo $view->render('views/home.html');
 
