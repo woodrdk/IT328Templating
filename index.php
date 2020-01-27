@@ -18,6 +18,12 @@ $f3 = Base::instance();
 // define a default route
 $f3 -> route('GET /', function($f3){
     $f3->set('title', 'All about templating');
+    $f3->set('temp', 67);
+    $f3->set('color', 'purple');
+    $f3->set('bookmarks', array ('http://wwww.yahoo.com',
+        'http://www.whowherehow.org',
+        'http://gmail.com')
+    );
     $view = new Template();
     echo $view->render('views/home.html');
 

@@ -14,6 +14,14 @@
     </div>
     <div class="container">
         <h1>{{ @title }}</h1>
+        <h2>{{ @temp }}</h2>
+        <p>My son Kellan loves the color {{ @color }}.</p>
+        <br>
+        <ul>
+            <repeat group="{{ @bookmarks}}" value="{{ @bookmark }}">
+                <li><a href="{{ @bookmark}}"> {{ @bookmark}}</a></li>
+            </repeat>
+        </ul>
     </div>
 </div>
 
